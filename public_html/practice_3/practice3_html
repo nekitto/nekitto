@@ -1,1 +1,12 @@
-
+<html>
+    <head>
+        <title>CV html+css</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Practice3</div>
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="cvHtmlCss.html">My CV in html+CSS</a></p>
+    </body>
+</html>
