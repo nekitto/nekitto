@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 h1 > span {
-    color: white;
+    color: black;
     font-family: Arial Black;
     font-weight: bold; 
 }
