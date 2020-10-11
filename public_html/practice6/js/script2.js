@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded",
                                 function (request) {
                                 console.log(request.responseText);
                                         var personObject = JSON.parse(request.responseText);
-                                        document.querySelector("#header1")
-                                        .innerHTML = "<h1>Hello " + personObject.data['first_name']
-                                        + ' ' + personObject.data['last_name'] + "!</h1>";
+                                        document.querySelector("#content")
+                                        .innerHTML = "<h2>Hello " + personObject.data['first_name']
+                                        + ' ' + personObject.data['last_name'] + "!</h2>";
                                 });
                 });
         }
