@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",
            
                                 function (request) {
                                 var name = 'test';
-                                document.querySelector("#header1")
+                                document.querySelector("#content")
                                         .innerHTML = "<h2>Hello " + name + "!</h2>";
                                 });
                                 
