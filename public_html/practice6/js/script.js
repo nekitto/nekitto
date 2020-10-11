@@ -1,4 +1,4 @@
- var i = 1;
+var i = 1;
     document.addEventListener("DOMContentLoaded",
         function (event) {
 
@@ -19,7 +19,9 @@
                                         .innerHTML ='<h1>Nikita Sitar</h1><p>nikita_sitar@ukr.net</p><img src="img.png" alt=""/>';
                                       
                                      }else if (i == 12){
-                                         i = 0;
+                                         document.querySelector("#header1")
+                                        .innerHTML ='<h1>Nikita Sitar</h1><p>nikita_sitar@ukr.net</p><img src="img.png" alt=""/>';
+                                         i = 1;
                                      }                       
                                      i=i+1;
                                 });
