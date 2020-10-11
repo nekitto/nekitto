@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",
                                 console.log(request.responseText);
                                         var personObject = JSON.parse(request.responseText);
                                         document.querySelector("#content")
-                                        .innerHTML = "<h2>test</h2>";
+                                        .innerHTML = "<h2>test " + name"</h2>";
                                 });
                 });
         }
