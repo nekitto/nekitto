@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",
 
                 // Call server to get the name
                 $ajaxUtils
-                        .sendGetRequest("https://reqres.in/api/users/3",
+                        .sendGetRequest("https://reqres.in/api/users/1",
                                 function (request) {
                                 console.log(request.responseText);
                                         var personObject = JSON.parse(request.responseText);
