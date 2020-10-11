@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded",
         function (event) {
 
         
-        document.querySelector(".button1")
+        document.querySelector(".header1")
                 .addEventListener("click", function () {
 
                 
            
                                 function (request) {
                                 var name = 'test';
-                                document.querySelector("#content")
+                                document.querySelector("#header1")
                                         .innerHTML = "<h2>Hello " + name + "!</h2>";
                                 });
                                 
