@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded",
               var name = request.responseText;
 
               document.querySelector("#content")
-                .innerHTML = "<h2><b>"name"<></h2>";
+                .innerHTML = "<h2><b>Test "name"<></h2>";
             });
 
         
