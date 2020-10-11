@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded",
                 // Call server to get the name
                 $ajaxUtils
                         .sendGetRequest("https://reqres.in/api/users/1",
-                                        $('#button1').click(function(){
-	                                var value = $('#select').val();
                                 function (request) {
                                 console.log(request.responseText);
                                         var personObject = JSON.parse(request.responseText);
