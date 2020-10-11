@@ -18,10 +18,10 @@ var i = 1;
                                          document.querySelector("#header1")
                                         .innerHTML ='<h1>Nikita Sitar</h1><p>nikita_sitar@ukr.net</p><img src="img.png" alt=""/>';
                                       
-                                     }else if (i == 12){
+                                     }else if (i > 12){
                                          document.querySelector("#header1")
                                         .innerHTML ='<h1>Nikita Sitar</h1><p>nikita_sitar@ukr.net</p><img src="img.png" alt=""/>';
-                                         i = 1;
+                                         i = 0;
                                      }                       
                                      i=i+1;
                                 });
