@@ -1,7 +1,7 @@
-<script>
+
 
  city.onchange = function(){
-   button1.value = "TEST"; 
+   document.getElementById("h1").innerHTML = "New text!"; 
  } 
-</script>
+
 
