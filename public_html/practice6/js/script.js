@@ -20,9 +20,7 @@ var i = 1;
                                       
                                      }else if (i > 12){
                                          i = 1;
-                                         document.querySelector("#header1")
-                                        .innerHTML = "<h1>" + personObject.data['first_name']
-                                        + ' ' + personObject.data['last_name'] + "</h1>"+"<p>"+personObject.data['email']+"</p>"+"<img src="+personObject.data['avatar']+">";
+                                         
                                          
                                      }                       
                                      i=i+1;
