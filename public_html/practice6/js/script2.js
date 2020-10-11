@@ -15,9 +15,11 @@ document.addEventListener("DOMContentLoaded",
                                 function (request) {
                                 console.log(request.responseText);
                                         var personObject = JSON.parse(request.responseText);
+                                        var name = $('#select').val();
                                         document.querySelector("#content")
                                         .innerHTML = "<h2>Hello " + personObject.data['first_name']
-                                        + ' ' + personObject.data['last_name'] + "!</h2>";
+                                        + ' ' + personObject.data['last_name'] + "!</h2>
+                                        <h3>"name"</h3>";
                                 });
                 });
         }
