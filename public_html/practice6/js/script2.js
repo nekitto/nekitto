@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded",
                                         document.querySelector("#content")
                                         .innerHTML = "<h2>Hello " + personObject.data['first_name']
                                         + ' ' + personObject.data['last_name'] + "!</h2>
-                                        <h3>"name"</h3>";
+                                        <h3>name</h3>";
                                 });
                 });
         }
