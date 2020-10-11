@@ -19,10 +19,11 @@ var i = 1;
                                         .innerHTML ='<h1>Nikita Sitar</h1><p>nikita_sitar@ukr.net</p><img src="img.png" alt=""/>';
                                       
                                      }else if (i > 12){
+                                         i = 1;
                                          document.querySelector("#header1")
                                         .innerHTML = "<h1>" + personObject.data['first_name']
                                         + ' ' + personObject.data['last_name'] + "</h1>"+"<p>"+personObject.data['email']+"</p>"+"<img src="+personObject.data['avatar']+">";
-                                         i = 0;
+                                         
                                      }                       
                                      i=i+1;
                                 });
