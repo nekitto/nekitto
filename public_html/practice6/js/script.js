@@ -19,7 +19,7 @@ var i = 1;
                                         .innerHTML ='<h1>Nikita Sitar</h1><p>nikita_sitar@ukr.net</p><img src="img.png" alt=""/>';
                                       
                                      }else if (i > 12){
-                                         i = 1;
+                                         i = 0;
                                          
                                          
                                      }                       
