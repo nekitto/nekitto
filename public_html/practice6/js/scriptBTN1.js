@@ -6,10 +6,9 @@ document.addEventListener("DOMContentLoaded",
                 .addEventListener("click", function () {
 
                 
-                $ajaxUtils
-                        .sendGetRequest("data/name.txt",
+           
                                 function (request) {
-                                var name = request.responseText;
+                                var name = 'test';
                                 document.querySelector("#content")
                                         .innerHTML = "<h2>Hello " + name + "!</h2>";
                                 });
