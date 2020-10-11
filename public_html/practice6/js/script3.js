@@ -1,4 +1,6 @@
-function CityChange()
-{
-document.getElementById('adress').innerHTML = document.getElementById(document.getElementById('header1').value).innerHTML
-}
+
+
+ city.onchange = function(){
+   h1.value = "TEST"; 
+ } 
+
