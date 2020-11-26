@@ -1,0 +1,66 @@
+#nav
+{
+	color:black;
+	
+}
+
+#nav:hover
+{
+	color:white;
+	background-color:b9c211;
+}
+
+#navTab
+{
+	background-color:d1db14;
+	
+}
+
+h1
+{
+	text-align:center;
+	color:black;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top:40px;
+}
+
+h2,p
+{
+	text-align:center;
+	color:black;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+
+body,html
+{
+	background: url(bg2.png);
+	background-size: 100%;
+}
+
+.header
+{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index: 1;
+}
+
+iframe
+{
+	display:block;
+}
+
+.container
+{
+	width:100%;
+	z-index: 2;
+}
+
+.col
+{
+	background-color:white;
+	
+}
