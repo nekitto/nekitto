@@ -60,7 +60,13 @@ function xrpActive()
    
 function count()
 {
+	
 	let temp = document.getElementById("txt").placeholder;
+	if(temp == "")
+	{
+		alert("Pick currency first");
+		return;
+	}
 	let currency = temp.toLowerCase();
 	var usd = "usd";
 	let request = new XMLHttpRequest();
