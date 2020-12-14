@@ -1,4 +1,46 @@
 
+let myRequest = new XMLHttpRequest()
+   myRequest.open('GET',"https://api.coingecko.com/api/v3/coins/");
+   myRequest.responseType = 'json';
+   myRequest.onload = () =>{
+   let x = (myRequest.response);
+   var current_price_btc = x[0]["market_data"]["current_price"]["usd"];
+   var current_price_eth = x[1]["market_data"]["current_price"]["usd"];
+   var current_price_xrp = x[2]["market_data"]["current_price"]["usd"];
+   var current_price_ltc = x[4]["market_data"]["current_price"]["usd"];
+
+   var lowest_btc = x[0]["market_data"]["low_24h"]["usd"];
+   var lowest_eth = x[1]["market_data"]["low_24h"]["usd"];
+   var lowest_xrp = x[2]["market_data"]["low_24h"]["usd"];
+   var lowest_ltc =  x[4]["market_data"]["low_24h"]["usd"];
+   
+   var highest_btc = x[0]["market_data"]["high_24h"]["usd"];
+   var highest_eth = x[1]["market_data"]["high_24h"]["usd"];
+   var highest_xrp = x[2]["market_data"]["high_24h"]["usd"];
+   var highest_ltc = x[4]["market_data"]["high_24h"]["usd"];
+   
+   document.getElementById("bitcoin_current_price").innerHTML = current_price_btc + "$";
+   document.getElementById("bitcoin_lowest_price").innerHTML = lowest_btc + "$";
+   document.getElementById("bitcoin_highest_price").innerHTML = highest_btc + "$"
+   
+   document.getElementById("ethereum_current_price").innerHTML = current_price_eth + "$";
+   document.getElementById("ethereum_lowest_price").innerHTML = lowest_eth + "$";
+   document.getElementById("ethereum_highest_price").innerHTML = highest_eth + "$";
+   
+   document.getElementById("litecoin_current_price").innerHTML = current_price_ltc + "$";
+   document.getElementById("litecoin_lowest_price").innerHTML = lowest_ltc + "$";
+   document.getElementById("litecoin_highest_price").innerHTML = highest_ltc + "$";
+   
+   document.getElementById("ripple_current_price").innerHTML = current_price_xrp + "$";
+   document.getElementById("ripple_lowest_price").innerHTML = lowest_xrp + "$";
+   document.getElementById("ripple_highest_price").innerHTML = highest_xrp + "$";
+   
+   }
+   myRequest.send();
+
+
+
+
 var currencies = ["bitcoin","ethereum","litecoin","ripple"];
 var selector_list_lowest = ["bitcoin_lowest_price","ethereum_lowest_price","litecoin_lowest_price","ripple_lowest_price"];
 var selector_list_highest = ["bitcoin_highest_price","ethereum_highest_price","litecoin_highest_price","ripple_highest_price"];
